@@ -175,7 +175,7 @@ function writeToFile(fileName, data) {
         if (err) {
             console.log(err);
         } else {
-            console.log('Your README.md file has successfully been created, please open it and make sure everything is correct! 🌞')
+            console.log('Your README.md file has successfully been created, please open it and make sure everything is correct!')
         }
     })
 };
