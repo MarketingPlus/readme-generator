@@ -44,12 +44,18 @@ const questions = [
             }
         },
     },
-
-
-
-
-
-
+    {
+        type: 'input',
+        name: 'description',
+        message: 'Write a detailed description so your users can understand your project',
+        validate: (value) => {
+            if (value) { 
+                return true 
+            } else {
+                return 'A description is required... please add a description to help your end users'
+            }
+        },
+    },
 
 ];
 
