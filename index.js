@@ -131,30 +131,6 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'repolink',
-        message: 'Please insert your repository link:',
-        validate: (value) => {
-            if (urlValidator(value)) { 
-                return true 
-            } else {
-                return 'Please enter in a valid link (full link including https://)'
-            }
-        },
-    },
-    {
-        type: 'input',
-        name: 'applink',
-        message: 'Please insert your deployed applications/projects link:',
-        validate: (value) => {
-            if (urlValidator(value)) { 
-                return true 
-            } else {
-                return 'Please enter in a valid link (full link including https://)'
-            }
-        },
-    },
-    {
-        type: 'input',
         name: 'license',
         message: 'Which license would you like to use for this project?',
         choices: ["MIT", "ISC", "GNU GPLv3"],

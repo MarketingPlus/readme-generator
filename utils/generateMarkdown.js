@@ -23,7 +23,7 @@ function generateMarkdown(data) {
   
   ## LINKS 🔗
 
-  [REPOSITORY](${data.repolink})
+  [REPOSITORY](https://github.com/${data.git}/${data.repo})
 
   [APPLICATION](${data.applink})
 
