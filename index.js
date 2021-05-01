@@ -116,6 +116,19 @@ const questions = [
             }
         },
     },
+    {
+        type: 'input',
+        name: 'tests',
+        message: 'How can the end user test this project and what are the instructions?',
+        validate: (value) => {
+            if (value) { 
+                return true 
+            } else {
+                return 'Test information is required... please add test information'
+            }
+        },
+    },
+    
 
 ];
 
