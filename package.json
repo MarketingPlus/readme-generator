@@ -1,12 +1,16 @@
 {
-  "name": "static-site",
+  "name": "readme-generator",
   "version": "1.0.0",
   "description": "![License Badge](https://img.shields.io/github/license/MarketingPlus/readme-generator)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+http://github.com/MarketingPlus/readme-generator.git"
+  },
+  "author": "Benjamin Wilson",
   "license": "ISC",
   "dependencies": {
     "email-validator": "^2.0.4",
@@ -16,5 +20,7 @@
   "keywords": [],
   "bugs": {
     "url": "https://github.com/MarketingPlus/readme-generator/issues"
-  }
+  },
+  "homepage": "https://github.com/MarketingPlus/readme-generator#readme"
+
 }
