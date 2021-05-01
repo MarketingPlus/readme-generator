@@ -22,7 +22,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'github',
+        name: 'git',
         message: 'What is your Github username? (Case sensitive)',
         validate: (value) => {
             if (value) { 
@@ -46,7 +46,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'description',
+        name: 'descr',
         message: 'Write a detailed description so your users can understand your project:',
         validate: (value) => {
             if (value) { 
@@ -92,6 +92,19 @@ const questions = [
             }
         },
     },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'What is the usage information for this project',
+        validate: (value) => {
+            if (value) { 
+                return true 
+            } else {
+                return 'Usage information is required and helps users understand proper use... please add usage information'
+            }
+        },
+    },
+
 ];
 
 // TODO: Create a function to write README file
