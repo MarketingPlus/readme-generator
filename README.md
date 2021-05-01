@@ -62,6 +62,10 @@ A node.js application which generates a professional README.md File which will h
 
 - the user will be prompted a seriers of questions and once successfully answered a README.md file is generated located in the generated-readmes folder
 
+## EXAMPLE README
+
+![README](https://user-images.githubusercontent.com/77607177/116784624-94245900-aad8-11eb-9cad-e8788b309a3c.PNG)
+
 <a name="howto"></a>
 
 ## HOW TO INSTALL AND USE 👨‍💻
