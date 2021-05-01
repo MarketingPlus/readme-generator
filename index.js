@@ -16,7 +16,7 @@ const questions = [
             if (value) { 
                 return true 
             } else { 
-                return 'A title is required... Please enter the title for this project' 
+                return 'A title is required... please enter the title for this project' 
             }
         },
     },
@@ -30,9 +30,20 @@ const questions = [
             } else {
                 return 'Your Github username is required... please enter your username'
             }
-        }
-
-    }
+        },
+    },
+    {
+        type: 'input',
+        name: 'repo',
+        message: 'What is the name of this repoistory? (Case sensitive)',
+        validate: (value) => {
+            if (value) { 
+                return true 
+            } else {
+                return 'Your repoistory name is required... please add your repo name'
+            }
+        },
+    },
 
 
 
