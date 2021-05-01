@@ -47,7 +47,7 @@ const questions = [
     {
         type: 'input',
         name: 'description',
-        message: 'Write a detailed description so your users can understand your project',
+        message: 'Write a detailed description so your users can understand your project:',
         validate: (value) => {
             if (value) { 
                 return true 
@@ -56,7 +56,30 @@ const questions = [
             }
         },
     },
-
+    {
+        type: 'input',
+        name: 'features',
+        message: 'Outline some features your project has:',
+        validate: (value) => {
+            if (value) { 
+                return true 
+            } else {
+                return 'Atleast one feature is required... please add a feature for your project'
+            }
+        },
+    },
+    {
+        type: 'input',
+        name: 'image',
+        message: 'Add a screenshot of your application (url format)',
+        validate: (value) => {
+            if (value) { 
+                return true 
+            } else {
+                return 'Please include an image url.... If you are unsure on how get an images url please watch this tutorial - (https://bit.ly/3vA7QDO)'
+            }
+        },
+    },
 ];
 
 // TODO: Create a function to write README file
