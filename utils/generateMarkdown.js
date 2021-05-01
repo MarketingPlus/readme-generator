@@ -21,36 +21,45 @@ function generateMarkdown(data) {
   * [QUESTIONS](#questions)
   * [LICENSE](#license)
   
+  <a name="links"></a>
   ## LINKS 🔗
 
   [REPOSITORY](https://github.com/${data.git}/${data.repo})
 
   [APPLICATION](https://${data.git}.github.io/${data.repo})
 
+  <a name="features"></a>
   ## FEATURES 💥
 
   ${data.features}
 
-  ## INSTALLATION 🖥️
 
-  ${data.install}
-
+  <a name="usage"></a>
   ## USAGE 📄
 
   ${data.usage}
 
+  <a name="installation"></a>
+  ## INSTALLATION 🖥️
+
+  ${data.install}
+
+  <a name="contribution"></a>
   ## CONTRIBUTION 🧔
 
   ${data.contribution}
 
+  <a name="test"></a>
   ## TEST ⚙️
 
   ${data.test}
 
+  <a name="questions"></a>
   ## QUESTIONS 📧
 
   If you have any question and concerns about this application or you would like to report an issue please [send me an email](mailto:${data.email}).
 
+  <a name="license"></a>
   ## LICENSE ⚖️
 
   Copyright (c) ${data.name} & [${data.git}](https://github.com/${data.git}). All rights reserved.
