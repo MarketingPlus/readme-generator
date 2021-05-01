@@ -25,7 +25,7 @@ function generateMarkdown(data) {
 
   [REPOSITORY](https://github.com/${data.git}/${data.repo})
 
-  [APPLICATION](${data.applink})
+  [APPLICATION](https://${data.git}.github.io/${data.repo})
 
   ## FEATURES 💥
 
