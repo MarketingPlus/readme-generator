@@ -14,8 +14,8 @@ function generateMarkdown(data) {
 
   * [LINKS](#links)
   * [FEATURES](#features)
-  * [USAGE](#usage)
   * [INSTALLATION](#installation)
+  * [USAGE](#usage)
   * [CONTRIBUTION](#contribution)
   * [TEST](#test)
   * [QUESTIONS](#questions)
@@ -33,16 +33,15 @@ function generateMarkdown(data) {
 
   ${data.features}
 
+  <a name="installation"></a>
+  ## INSTALLATION 🖥️
+
+  ${data.install}
 
   <a name="usage"></a>
   ## USAGE 📄
 
   ${data.usage}
-
-  <a name="installation"></a>
-  ## INSTALLATION 🖥️
-
-  ${data.install}
 
   <a name="contribution"></a>
   ## CONTRIBUTION 🧔
