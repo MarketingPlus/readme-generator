@@ -71,7 +71,7 @@ const questions = [
     {
         type: 'input',
         name: 'image',
-        message: 'Add a screenshot of your application (url format)',
+        message: 'Add a screenshot of your application (url format):',
         validate: (value) => {
             if (value) { 
                 return true 
@@ -83,7 +83,7 @@ const questions = [
     {
         type: 'input',
         name: 'install',
-        message: 'Enter how to install your application for your end users',
+        message: 'Enter how to install your application for your end users:',
         validate: (value) => {
             if (value) { 
                 return true 
@@ -95,12 +95,24 @@ const questions = [
     {
         type: 'input',
         name: 'usage',
-        message: 'What is the usage information for this project',
+        message: 'What is the usage information for this project?',
         validate: (value) => {
             if (value) { 
                 return true 
             } else {
                 return 'Usage information is required and helps users understand proper use... please add usage information'
+            }
+        },
+    },
+    {
+        type: 'input',
+        name: 'contribution',
+        message: 'Who contributed in creating this project?',
+        validate: (value) => {
+            if (value) { 
+                return true 
+            } else {
+                return 'Contribution guidelines helps users understand who developed the project... please add contribution information'
             }
         },
     },
