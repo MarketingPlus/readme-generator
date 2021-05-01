@@ -12,14 +12,20 @@ function generateMarkdown(data) {
 
   ## TABLE OF CONTENTS
 
+  * [LINKS](#links)
   * [FEATURES](#features)
   * [USAGE](#usage)
   * [INSTALLATION](#installation)
   * [CONTRIBUTION](#contribution)
-  * [TEST](#tests)
+  * [TEST](#test)
   * [QUESTIONS](#questions)
   * [LICENSE](#license)
-  * [LINKS](#links)
+  
+  ## LINKS 🔗
+
+  [REPOSITORY](${data.repolink})
+
+  [APPLICATION](${data.applink})
 
   ## FEATURES 💥
 
@@ -33,9 +39,23 @@ function generateMarkdown(data) {
 
   ${data.usage}
 
-  ## CONTRIBUTION
+  ## CONTRIBUTION 🧔
 
+  ${data.contribution}
 
+  ## TEST ⚙️
+
+  ${data.test}
+
+  ## QUESTIONS 📧
+
+  If you have any question and concerns about this application or you would like to report an issue please [send me an email](mailto:${data.email}).
+
+  ## LICENSE 📂
+
+  Copyright (c) ${data.name} & [${data.git}](https://github.com/${data.git}). All rights reserved.
+  
+  Licensed under the ${data.license} license.
 
 `;
 }

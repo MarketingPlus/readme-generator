@@ -119,7 +119,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'tests',
+        name: 'test',
         message: 'How can the end user test this project and what are the instructions?',
         validate: (value) => {
             if (value) { 
@@ -175,6 +175,18 @@ const questions = [
                 return true 
             } else {
                 return 'Please enter in a valid email address'
+            }
+        },
+    },
+    {
+        type: 'input',
+        name: 'name',
+        message: 'What is your full name',
+        validate: (value) => {
+            if (value) { 
+                return true 
+            } else {
+                return 'Your name is required... please enter your full name'
             }
         },
     },
