@@ -132,7 +132,7 @@ const questions = [
     {
         type: 'input',
         name: 'repolink',
-        message: 'Please insert your repository link',
+        message: 'Please insert your repository link:',
         validate: (value) => {
             if (urlValidator(value)) { 
                 return true 
@@ -144,7 +144,7 @@ const questions = [
     {
         type: 'input',
         name: 'applink',
-        message: 'Please insert your deployed applications/projects link',
+        message: 'Please insert your deployed applications/projects link:',
         validate: (value) => {
             if (urlValidator(value)) { 
                 return true 
@@ -166,7 +166,18 @@ const questions = [
             }
         },
     },
-    
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email so users can contact you if any issues arrise:',
+        validate: (value) => {
+            if (emailValidator.validate(value)) { 
+                return true 
+            } else {
+                return 'Please enter in a valid email address'
+            }
+        },
+    },
 
 ];
 
