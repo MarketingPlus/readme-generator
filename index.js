@@ -3,6 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
 const emailValidator = require('email-validator');
+const urlValidator = require('url-validator');
 
 const generateMarkdown = require('./utils/generateMarkdown');
 
@@ -73,10 +74,10 @@ const questions = [
         name: 'image',
         message: 'Add a screenshot of your application (url format):',
         validate: (value) => {
-            if (value) { 
+            if (urlValidator(value)) { 
                 return true 
             } else {
-                return 'Please include an image url.... If you are unsure on how get an images url please watch this tutorial - (https://bit.ly/3vA7QDO)'
+                return 'Please enter a valid link to image.... If you are unsure on how get an images url please watch this tutorial - (https://bit.ly/3vA7QDO)'
             }
         },
     },
@@ -125,6 +126,18 @@ const questions = [
                 return true 
             } else {
                 return 'Test information is required... please add test information'
+            }
+        },
+    },
+    {
+        type: 'input',
+        name: 'repolink',
+        message: 'Please insert your repository link',
+        validate: (value) => {
+            if (urlValidator(value)) { 
+                return true 
+            } else {
+                return 'Please enter in a valid link (full link including https://)'
             }
         },
     },
