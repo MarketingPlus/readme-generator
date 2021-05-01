@@ -157,7 +157,7 @@ const questions = [
     {
         type: 'input',
         name: 'name',
-        message: 'What is your full name',
+        message: 'What is your full name?',
         validate: (value) => {
             if (value) { 
                 return true 
@@ -183,7 +183,7 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then(function (data) {
-        writeToFile("README.md", generateMarkdown(data))
+        writeToFile("generated-readmes/README.md", generateMarkdown(data))
     })
 };
 
