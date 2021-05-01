@@ -1,6 +1,6 @@
-# a
+# README.md Generator by Benjamin Wilson
 
-![LICENSE](https://img.shields.io/github.license/a/a)
+![LICENSE](https://img.shields.io/github/license/MarketingPlus/readme-generator)
 
 ## DESCRIPTION 😊
 
