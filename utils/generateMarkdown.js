@@ -51,7 +51,7 @@ function generateMarkdown(data) {
 
   If you have any question and concerns about this application or you would like to report an issue please [send me an email](mailto:${data.email}).
 
-  ## LICENSE 📂
+  ## LICENSE ⚖️
 
   Copyright (c) ${data.name} & [${data.git}](https://github.com/${data.git}). All rights reserved.
   
