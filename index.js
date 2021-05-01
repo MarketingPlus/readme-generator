@@ -80,6 +80,18 @@ const questions = [
             }
         },
     },
+    {
+        type: 'input',
+        name: 'install',
+        message: 'Enter how to install your application for your end users',
+        validate: (value) => {
+            if (value) { 
+                return true 
+            } else {
+                return 'Installation information is required... please add installation instructions'
+            }
+        },
+    },
 ];
 
 // TODO: Create a function to write README file
